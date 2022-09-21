@@ -1,4 +1,8 @@
 # realm_Microprocessor
+
+PLEASE WATCH YOUTUBE VIDEO: 	https://youtu.be/_Bb-yAb8P6Y
+
+
 microrealms game
 
 To improve this game, I added different effects to make it more engaging.

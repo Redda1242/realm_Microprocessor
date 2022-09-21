@@ -1,0 +1,1045 @@
+Component: ARM Compiler 6.14 Tool: armlink [5db06800]
+
+==============================================================================
+
+Section Cross References
+
+    stm32l031lib.o(.ARM.exidx.text.pinMode) refers to stm32l031lib.o(.text.pinMode) for [Anonymous Symbol]
+    stm32l031lib.o(.ARM.exidx.text.delay) refers to stm32l031lib.o(.text.delay) for [Anonymous Symbol]
+    stm32l031lib.o(.ARM.exidx.text.enablePullUp) refers to stm32l031lib.o(.text.enablePullUp) for [Anonymous Symbol]
+    stm32l031lib.o(.ARM.exidx.text.initClock) refers to stm32l031lib.o(.text.initClock) for [Anonymous Symbol]
+    stm32l031lib.o(.text.initSerial) refers to stm32l031lib.o(.text.initClock) for initClock
+    stm32l031lib.o(.text.initSerial) refers to stm32l031lib.o(.text.pinMode) for pinMode
+    stm32l031lib.o(.ARM.exidx.text.initSerial) refers to stm32l031lib.o(.text.initSerial) for [Anonymous Symbol]
+    stm32l031lib.o(.text.SerialBegin) refers to stm32l031lib.o(.text.initClock) for initClock
+    stm32l031lib.o(.text.SerialBegin) refers to stm32l031lib.o(.text.pinMode) for pinMode
+    stm32l031lib.o(.ARM.exidx.text.SerialBegin) refers to stm32l031lib.o(.text.SerialBegin) for [Anonymous Symbol]
+    stm32l031lib.o(.ARM.exidx.text.eputchar) refers to stm32l031lib.o(.text.eputchar) for [Anonymous Symbol]
+    stm32l031lib.o(.ARM.exidx.text.egetchar) refers to stm32l031lib.o(.text.egetchar) for [Anonymous Symbol]
+    stm32l031lib.o(.text.eputs) refers to stm32l031lib.o(.text.eputchar) for eputchar
+    stm32l031lib.o(.ARM.exidx.text.eputs) refers to stm32l031lib.o(.text.eputs) for [Anonymous Symbol]
+    stm32l031lib.o(.text.printDecimal) refers to aeabi_sdivfast.o(.text_divfast) for __aeabi_uidiv
+    stm32l031lib.o(.text.printDecimal) refers to stm32l031lib.o(.text.eputs) for eputs
+    stm32l031lib.o(.ARM.exidx.text.printDecimal) refers to stm32l031lib.o(.text.printDecimal) for [Anonymous Symbol]
+    stm32l031lib.o(.text.initSound) refers to stm32l031lib.o(.text.pinMode) for pinMode
+    stm32l031lib.o(.ARM.exidx.text.initSound) refers to stm32l031lib.o(.text.initSound) for [Anonymous Symbol]
+    main.o(.text.main) refers to stm32l031lib.o(.text.initClock) for initClock
+    main.o(.text.main) refers to stm32l031lib.o(.text.pinMode) for pinMode
+    main.o(.text.main) refers to stm32l031lib.o(.text.enablePullUp) for enablePullUp
+    main.o(.text.main) refers to stm32l031lib.o(.text.initSound) for initSound
+    main.o(.text.main) refers to stm32l031lib.o(.text.initSerial) for initSerial
+    main.o(.text.main) refers to realm.o(.text.runGame) for runGame
+    main.o(.ARM.exidx.text.main) refers to main.o(.text.main) for [Anonymous Symbol]
+    realm.o(.text.runGame) refers to realm.o(.text.randomize) for randomize
+    realm.o(.text.runGame) refers to realm.o(.text.LEDAll) for LEDAll
+    realm.o(.text.runGame) refers to realm.o(.text.playNote) for playNote
+    realm.o(.text.runGame) refers to realm.o(.text.delayms) for delayms
+    realm.o(.text.runGame) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.runGame) refers to realm.o(.text.showHelp) for showHelp
+    realm.o(.text.runGame) refers to realm.o(.text.showGameMessage) for showGameMessage
+    realm.o(.text.runGame) refers to realm.o(.text.initRealm) for initRealm
+    realm.o(.text.runGame) refers to realm.o(.text.initPlayer) for initPlayer
+    realm.o(.text.runGame) refers to realm.o(.text.showPlayer) for showPlayer
+    realm.o(.text.runGame) refers to realm.o(.text.showRealm) for showRealm
+    realm.o(.text.runGame) refers to realm.o(.text.getUserInput) for getUserInput
+    realm.o(.text.runGame) refers to realm.o(.text.step) for step
+    realm.o(.text.runGame) refers to realm.o(.rodata.SpringNotes) for [Anonymous Symbol]
+    realm.o(.text.runGame) refers to realm.o(.bss.GameStarted) for [Anonymous Symbol]
+    realm.o(.text.runGame) refers to realm.o(.rodata.MusicBegin) for [Anonymous Symbol]
+    realm.o(.text.runGame) refers to realm.o(.bss.theRealm) for [Anonymous Symbol]
+    realm.o(.text.runGame) refers to realm.o(.bss.thePlayer) for [Anonymous Symbol]
+    realm.o(.text.runGame) refers to realm.o(.rodata.Move) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.runGame) refers to realm.o(.text.runGame) for [Anonymous Symbol]
+    realm.o(.text.randomize) refers to stm32l031lib.o(.text.pinMode) for pinMode
+    realm.o(.text.randomize) refers to realm.o(.text.ADCBegin) for ADCBegin
+    realm.o(.text.randomize) refers to realm.o(.text.ADCRead) for ADCRead
+    realm.o(.text.randomize) refers to stm32l031lib.o(.text.delay) for delay
+    realm.o(.text.randomize) refers to stm32l031lib.o(.text.printDecimal) for printDecimal
+    realm.o(.text.randomize) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.randomize) refers to realm.o(.bss.shift_register) for [Anonymous Symbol]
+    realm.o(.text.randomize) refers to realm.o(.rodata.str1.1) for .L.str.19
+    realm.o(.ARM.exidx.text.randomize) refers to realm.o(.text.randomize) for [Anonymous Symbol]
+    realm.o(.text.LEDAll) refers to stm32l031lib.o(.text.delay) for delay
+    realm.o(.ARM.exidx.text.LEDAll) refers to realm.o(.text.LEDAll) for [Anonymous Symbol]
+    realm.o(.text.playNote) refers to aeabi_sdivfast.o(.text_divfast) for __aeabi_uidiv
+    realm.o(.text.playNote) refers to realm.o(.text.delayms) for delayms
+    realm.o(.text.playNote) refers to realm.o(.bss.SoundDuration) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.playNote) refers to realm.o(.text.playNote) for [Anonymous Symbol]
+    realm.o(.text.delayms) refers to realm.o(.bss.ms_counter) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.delayms) refers to realm.o(.text.delayms) for [Anonymous Symbol]
+    realm.o(.text.showHelp) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.ARM.exidx.text.showHelp) refers to realm.o(.text.showHelp) for [Anonymous Symbol]
+    realm.o(.text.showGameMessage) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.ARM.exidx.text.showGameMessage) refers to realm.o(.text.showGameMessage) for [Anonymous Symbol]
+    realm.o(.text.initRealm) refers to realm.o(.text.random) for random
+    realm.o(.ARM.exidx.text.initRealm) refers to realm.o(.text.initRealm) for [Anonymous Symbol]
+    realm.o(.text.initPlayer) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.initPlayer) refers to realm.o(.text.getUserInput) for getUserInput
+    realm.o(.text.initPlayer) refers to stm32l031lib.o(.text.eputchar) for eputchar
+    realm.o(.text.initPlayer) refers to realm.o(.text.setHealth) for setHealth
+    realm.o(.text.initPlayer) refers to realm.o(.text.random) for random
+    realm.o(.ARM.exidx.text.initPlayer) refers to realm.o(.text.initPlayer) for [Anonymous Symbol]
+    realm.o(.text.showPlayer) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.showPlayer) refers to stm32l031lib.o(.text.printDecimal) for printDecimal
+    realm.o(.text.showPlayer) refers to realm.o(.text.getWeaponName) for getWeaponName
+    realm.o(.ARM.exidx.text.showPlayer) refers to realm.o(.text.showPlayer) for [Anonymous Symbol]
+    realm.o(.text.showRealm) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.showRealm) refers to stm32l031lib.o(.text.eputchar) for eputchar
+    realm.o(.text.showRealm) refers to realm.o(.rodata.str1.1) for .L.str.19
+    realm.o(.ARM.exidx.text.showRealm) refers to realm.o(.text.showRealm) for [Anonymous Symbol]
+    realm.o(.text.getUserInput) refers to stm32l031lib.o(.text.egetchar) for egetchar
+    realm.o(.ARM.exidx.text.getUserInput) refers to realm.o(.text.getUserInput) for [Anonymous Symbol]
+    realm.o(.text.step) refers to realm.o(.text.RedOn) for RedOn
+    realm.o(.text.step) refers to realm.o(.text.YellowOn) for YellowOn
+    realm.o(.text.step) refers to realm.o(.text.GreenOn) for GreenOn
+    realm.o(.text.step) refers to stm32l031lib.o(.text.delay) for delay
+    realm.o(.text.step) refers to realm.o(.text.showGameMessage) for showGameMessage
+    realm.o(.text.step) refers to realm.o(.text.RedOff) for RedOff
+    realm.o(.text.step) refers to realm.o(.text.YellowOff) for YellowOff
+    realm.o(.text.step) refers to realm.o(.text.GreenOff) for GreenOff
+    realm.o(.text.step) refers to realm.o(.text.playNote) for playNote
+    realm.o(.text.step) refers to realm.o(.text.doChallenge) for doChallenge
+    realm.o(.text.step) refers to realm.o(.text.LEDAll) for LEDAll
+    realm.o(.text.step) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.step) refers to realm.o(.text.setHealth) for setHealth
+    realm.o(.text.step) refers to realm.o(.text.initRealm) for initRealm
+    realm.o(.text.step) refers to realm.o(.text.showRealm) for showRealm
+    realm.o(.text.step) refers to realm.o(.text.setStrength) for setStrength
+    realm.o(.text.step) refers to realm.o(.text.random) for random
+    realm.o(.text.step) refers to realm.o(.text.addWeapon) for addWeapon
+    realm.o(.text.step) refers to realm.o(.text.showPlayer) for showPlayer
+    realm.o(.text.step) refers to realm.o(.rodata.Win) for [Anonymous Symbol]
+    realm.o(.text.step) refers to realm.o(.bss.theRealm) for [Anonymous Symbol]
+    realm.o(.text.step) refers to realm.o(.rodata.Collect) for [Anonymous Symbol]
+    realm.o(.text.step) refers to realm.o(.rodata.str1.1) for .L.str.12
+    realm.o(.text.step) refers to realm.o(.rodata.Monster) for [Anonymous Symbol]
+    realm.o(.text.step) refers to realm.o(.rodata.MeetDragon) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.step) refers to realm.o(.text.step) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.RedOn) refers to realm.o(.text.RedOn) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.YellowOn) refers to realm.o(.text.YellowOn) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.GreenOn) refers to realm.o(.text.GreenOn) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.RedOff) refers to realm.o(.text.RedOff) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.YellowOff) refers to realm.o(.text.YellowOff) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.GreenOff) refers to realm.o(.text.GreenOff) for [Anonymous Symbol]
+    realm.o(.text.doChallenge) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.doChallenge) refers to realm.o(.text.getUserInput) for getUserInput
+    realm.o(.text.doChallenge) refers to realm.o(.text.playNote) for playNote
+    realm.o(.text.doChallenge) refers to realm.o(.text.getWeaponName) for getWeaponName
+    realm.o(.text.doChallenge) refers to realm.o(.text.LEDAll) for LEDAll
+    realm.o(.text.doChallenge) refers to realm.o(.text.random) for random
+    realm.o(.text.doChallenge) refers to realm.o(.text.setStrength) for setStrength
+    realm.o(.text.doChallenge) refers to realm.o(.text.RedOn) for RedOn
+    realm.o(.text.doChallenge) refers to stm32l031lib.o(.text.delay) for delay
+    realm.o(.text.doChallenge) refers to realm.o(.text.RedOff) for RedOff
+    realm.o(.text.doChallenge) refers to realm.o(.text.setHealth) for setHealth
+    realm.o(.text.doChallenge) refers to stm32l031lib.o(.text.printDecimal) for printDecimal
+    realm.o(.text.doChallenge) refers to realm.o(.text.showGameMessage) for showGameMessage
+    realm.o(.text.doChallenge) refers to realm.o(.text.GreenOn) for GreenOn
+    realm.o(.text.doChallenge) refers to realm.o(.text.GreenOff) for GreenOff
+    realm.o(.text.doChallenge) refers to realm.o(.rodata.Fight) for [Anonymous Symbol]
+    realm.o(.text.doChallenge) refers to realm.o(.rodata.str1.1) for .L.str.19
+    realm.o(.text.doChallenge) refers to realm.o(.rodata.cst16) for WeaponDamage
+    realm.o(.text.doChallenge) refers to realm.o(.rodata.Fail) for [Anonymous Symbol]
+    realm.o(.text.doChallenge) refers to realm.o(.rodata.Win) for [Anonymous Symbol]
+    realm.o(.text.doChallenge) refers to realm.o(.rodata.Dead) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.doChallenge) refers to realm.o(.text.doChallenge) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.setHealth) refers to realm.o(.text.setHealth) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.setStrength) refers to realm.o(.text.setStrength) for [Anonymous Symbol]
+    realm.o(.text.addWeapon) refers to stm32l031lib.o(.text.eputs) for eputs
+    realm.o(.text.addWeapon) refers to stm32l031lib.o(.text.printDecimal) for printDecimal
+    realm.o(.text.addWeapon) refers to realm.o(.text.showPlayer) for showPlayer
+    realm.o(.text.addWeapon) refers to realm.o(.text.getUserInput) for getUserInput
+    realm.o(.text.addWeapon) refers to stm32l031lib.o(.text.eputchar) for eputchar
+    realm.o(.text.addWeapon) refers to realm.o(.rodata.str1.1) for .L.str.41
+    realm.o(.ARM.exidx.text.addWeapon) refers to realm.o(.text.addWeapon) for [Anonymous Symbol]
+    realm.o(.text.random) refers to realm.o(.text.prbs) for prbs
+    realm.o(.ARM.exidx.text.random) refers to realm.o(.text.random) for [Anonymous Symbol]
+    realm.o(.text.getWeaponName) refers to realm.o(.rodata.str1.1) for .L.str.43
+    realm.o(.ARM.exidx.text.getWeaponName) refers to realm.o(.text.getWeaponName) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.zap) refers to realm.o(.text.zap) for [Anonymous Symbol]
+    realm.o(.text.prbs) refers to realm.o(.bss.shift_register) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.prbs) refers to realm.o(.text.prbs) for [Anonymous Symbol]
+    realm.o(.text.ADCBegin) refers to stm32l031lib.o(.text.pinMode) for pinMode
+    realm.o(.ARM.exidx.text.ADCBegin) refers to realm.o(.text.ADCBegin) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.ADCRead) refers to realm.o(.text.ADCRead) for [Anonymous Symbol]
+    realm.o(.text.SysTick_Handler) refers to realm.o(.bss.SoundDuration) for [Anonymous Symbol]
+    realm.o(.text.SysTick_Handler) refers to realm.o(.bss.ms_counter) for [Anonymous Symbol]
+    realm.o(.ARM.exidx.text.SysTick_Handler) refers to realm.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    startup_stm32l031xx.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32l031xx.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32l031xx.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32l031xx.o(RESET) refers to startup_stm32l031xx.o(STACK) for __initial_sp
+    startup_stm32l031xx.o(RESET) refers to startup_stm32l031xx.o(.text) for Reset_Handler
+    startup_stm32l031xx.o(RESET) refers to realm.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_stm32l031xx.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_stm32l031xx.o(.text) refers to system_stm32l0xx.o(.text.SystemInit) for SystemInit
+    startup_stm32l031xx.o(.text) refers to __main.o(!!!main) for __main
+    startup_stm32l031xx.o(.text) refers to startup_stm32l031xx.o(HEAP) for Heap_Mem
+    startup_stm32l031xx.o(.text) refers to startup_stm32l031xx.o(STACK) for Stack_Mem
+    system_stm32l0xx.o(.ARM.exidx.text.SystemInit) refers to system_stm32l0xx.o(.text.SystemInit) for [Anonymous Symbol]
+    system_stm32l0xx.o(.text.SystemCoreClockUpdate) refers to aeabi_sdivfast.o(.text_divfast) for __aeabi_uidiv
+    system_stm32l0xx.o(.text.SystemCoreClockUpdate) refers to system_stm32l0xx.o(.rodata.PLLMulTable) for PLLMulTable
+    system_stm32l0xx.o(.text.SystemCoreClockUpdate) refers to system_stm32l0xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_stm32l0xx.o(.text.SystemCoreClockUpdate) refers to system_stm32l0xx.o(.rodata.AHBPrescTable) for AHBPrescTable
+    system_stm32l0xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_stm32l0xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_stm32l031xx.o(.text) for __user_initial_stackheap
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to tempstk.o(.text) for __temporary_stack_top
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to __main.o(!!!main) for __main
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_exit_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_wrch_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000002) for __rt_lib_shutdown_cpp_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000007) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000010) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000004) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    sys_command_hlt.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command_hlt.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing stm32l031lib.o(.text), (0 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.pinMode), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.delay), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.enablePullUp), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.initClock), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.initSerial), (8 bytes).
+    Removing stm32l031lib.o(.text.SerialBegin), (148 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.SerialBegin), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.eputchar), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.egetchar), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.eputs), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.printDecimal), (8 bytes).
+    Removing stm32l031lib.o(.ARM.exidx.text.initSound), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing realm.o(.text), (0 bytes).
+    Removing realm.o(.ARM.exidx.text.runGame), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.randomize), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.LEDAll), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.playNote), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.delayms), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.showHelp), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.showGameMessage), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.initRealm), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.initPlayer), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.showPlayer), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.showRealm), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.getUserInput), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.step), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.RedOn), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.YellowOn), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.GreenOn), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.RedOff), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.YellowOff), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.GreenOff), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.doChallenge), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.setHealth), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.setStrength), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.addWeapon), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.random), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.getWeaponName), (8 bytes).
+    Removing realm.o(.text.zap), (2 bytes).
+    Removing realm.o(.ARM.exidx.text.zap), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.prbs), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.ADCBegin), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.ADCRead), (8 bytes).
+    Removing realm.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing system_stm32l0xx.o(.text), (0 bytes).
+    Removing system_stm32l0xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_stm32l0xx.o(.text.SystemCoreClockUpdate), (172 bytes).
+    Removing system_stm32l0xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_stm32l0xx.o(.data.SystemCoreClock), (4 bytes).
+    Removing system_stm32l0xx.o(.rodata.AHBPrescTable), (16 bytes).
+    Removing system_stm32l0xx.o(.rodata.APBPrescTable), (8 bytes).
+    Removing system_stm32l0xx.o(.rodata.PLLMulTable), (9 bytes).
+
+56 unused section(s) (total 715 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatterp.s                 0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit_hlt.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch_hlt.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command_hlt.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdivfast.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdivfast_div0.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/cfplib/fpinit.c                 0x00000000   Number         0  fpinit.o ABSOLUTE
+    RTE/Device/STM32L031K6Tx/startup_stm32l031xx.s 0x00000000   Number         0  startup_stm32l031xx.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    realm.c                                  0x00000000   Number         0  realm.o ABSOLUTE
+    stm32l031lib.c                           0x00000000   Number         0  stm32l031lib.o ABSOLUTE
+    system_stm32l0xx.c                       0x00000000   Number         0  system_stm32l0xx.o ABSOLUTE
+    RESET                                    0x08000000   Section      192  startup_stm32l031xx.o(RESET)
+    !!!main                                  0x080000c0   Section        8  __main.o(!!!main)
+    !!!scatter                               0x080000c8   Section       60  __scatter.o(!!!scatter)
+    !!handler_zi                             0x08000104   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x08000120   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000004          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$0000000A          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000011          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$0000002C          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x08000122   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000033          0x08000122   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    .ARM.Collect$$libshutdown$$00000000      0x08000124   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000002      0x08000126   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    .ARM.Collect$$libshutdown$$00000004      0x08000126   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    .ARM.Collect$$libshutdown$$00000007      0x08000126   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    .ARM.Collect$$libshutdown$$0000000A      0x08000126   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    .ARM.Collect$$libshutdown$$0000000C      0x08000126   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    .ARM.Collect$$libshutdown$$0000000F      0x08000126   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$libshutdown$$00000010      0x08000126   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    .ARM.Collect$$rtentry$$00000000          0x08000128   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x08000128   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x08000128   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x0800012e   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x0800012e   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x08000132   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x08000132   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x0800013a   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x0800013c   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x0800013c   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x08000140   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .text                                    0x08000148   Section       56  startup_stm32l031xx.o(.text)
+    .text                                    0x08000180   Section        0  heapauxi.o(.text)
+    .text                                    0x08000186   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x080001c4   Section        0  exit.o(.text)
+    .text                                    0x080001d4   Section        8  libspace.o(.text)
+    .text                                    0x080001dc   Section        0  sys_exit.o(.text)
+    .text                                    0x080001e8   Section        2  use_no_semi.o(.text)
+    .text                                    0x080001ea   Section        0  indicate_semi.o(.text)
+    [Anonymous Symbol]                       0x080001ec   Section        0  realm.o(.text.ADCBegin)
+    __arm_cp.27_0                            0x08000234   Number         4  realm.o(.text.ADCBegin)
+    [Anonymous Symbol]                       0x08000238   Section        0  realm.o(.text.ADCRead)
+    __arm_cp.28_0                            0x08000250   Number         4  realm.o(.text.ADCRead)
+    [Anonymous Symbol]                       0x08000254   Section        0  realm.o(.text.GreenOff)
+    [Anonymous Symbol]                       0x08000260   Section        0  realm.o(.text.GreenOn)
+    [Anonymous Symbol]                       0x0800026c   Section        0  realm.o(.text.LEDAll)
+    __arm_cp.2_1                             0x080002c4   Number         4  realm.o(.text.LEDAll)
+    __arm_cp.2_2                             0x080002c8   Number         4  realm.o(.text.LEDAll)
+    [Anonymous Symbol]                       0x080002cc   Section        0  realm.o(.text.RedOff)
+    [Anonymous Symbol]                       0x080002d8   Section        0  realm.o(.text.RedOn)
+    [Anonymous Symbol]                       0x080002e4   Section        0  realm.o(.text.SysTick_Handler)
+    __arm_cp.29_0                            0x080002fc   Number         4  realm.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08000300   Section        0  system_stm32l0xx.o(.text.SystemInit)
+    __arm_cp.0_0                             0x08000340   Number         4  system_stm32l0xx.o(.text.SystemInit)
+    __arm_cp.0_1                             0x08000344   Number         4  system_stm32l0xx.o(.text.SystemInit)
+    __arm_cp.0_2                             0x08000348   Number         4  system_stm32l0xx.o(.text.SystemInit)
+    __arm_cp.0_3                             0x0800034c   Number         4  system_stm32l0xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08000350   Section        0  realm.o(.text.YellowOff)
+    [Anonymous Symbol]                       0x0800035c   Section        0  realm.o(.text.YellowOn)
+    __arm_cp.14_0                            0x08000368   Number         4  realm.o(.text.YellowOn)
+    [Anonymous Symbol]                       0x0800036c   Section        0  realm.o(.text.addWeapon)
+    __arm_cp.22_4                            0x08000448   Number         4  realm.o(.text.addWeapon)
+    [Anonymous Symbol]                       0x08000478   Section        0  stm32l031lib.o(.text.delay)
+    [Anonymous Symbol]                       0x0800048c   Section        0  realm.o(.text.delayms)
+    __arm_cp.4_0                             0x0800049c   Number         4  realm.o(.text.delayms)
+    [Anonymous Symbol]                       0x080004a0   Section        0  realm.o(.text.doChallenge)
+    __arm_cp.19_2                            0x08000734   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_4                            0x08000748   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_5                            0x0800074c   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_13                           0x080007a0   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_14                           0x080007a4   Number         4  realm.o(.text.doChallenge)
+    LightningSpellDamage                     0x080007b0   Number         0  realm.o(.text.doChallenge)
+    FireSpellDamage                          0x080007bc   Number         0  realm.o(.text.doChallenge)
+    FreezeSpellDamage                        0x080007c8   Number         0  realm.o(.text.doChallenge)
+    __arm_cp.19_21                           0x080007cc   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_22                           0x080007d0   Number         4  realm.o(.text.doChallenge)
+    BadGuyDamage                             0x080007d4   Number         0  realm.o(.text.doChallenge)
+    __arm_cp.19_24                           0x080007d8   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_26                           0x080007e4   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_27                           0x080007e8   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_28                           0x080007ec   Number         4  realm.o(.text.doChallenge)
+    __arm_cp.19_29                           0x080007f0   Number         4  realm.o(.text.doChallenge)
+    [Anonymous Symbol]                       0x080007f4   Section        0  stm32l031lib.o(.text.egetchar)
+    [Anonymous Symbol]                       0x08000804   Section        0  stm32l031lib.o(.text.enablePullUp)
+    [Anonymous Symbol]                       0x0800081c   Section        0  stm32l031lib.o(.text.eputchar)
+    __arm_cp.6_0                             0x08000828   Number         4  stm32l031lib.o(.text.eputchar)
+    [Anonymous Symbol]                       0x0800082c   Section        0  stm32l031lib.o(.text.eputs)
+    [Anonymous Symbol]                       0x08000848   Section        0  realm.o(.text.getUserInput)
+    [Anonymous Symbol]                       0x08000854   Section        0  realm.o(.text.getWeaponName)
+    [Anonymous Symbol]                       0x0800087c   Section        0  stm32l031lib.o(.text.initClock)
+    __arm_cp.3_0                             0x0800089c   Number         4  stm32l031lib.o(.text.initClock)
+    [Anonymous Symbol]                       0x080008a0   Section        0  realm.o(.text.initPlayer)
+    [Anonymous Symbol]                       0x08000950   Section        0  realm.o(.text.initRealm)
+    FindTypes                                0x080009c0   Number         0  realm.o(.text.initRealm)
+    Baddies                                  0x080009c8   Number         0  realm.o(.text.initRealm)
+    [Anonymous Symbol]                       0x080009cc   Section        0  stm32l031lib.o(.text.initSerial)
+    __arm_cp.4_1                             0x08000a50   Number         4  stm32l031lib.o(.text.initSerial)
+    __arm_cp.4_2                             0x08000a54   Number         4  stm32l031lib.o(.text.initSerial)
+    __arm_cp.4_3                             0x08000a58   Number         4  stm32l031lib.o(.text.initSerial)
+    [Anonymous Symbol]                       0x08000a5c   Section        0  stm32l031lib.o(.text.initSound)
+    [Anonymous Symbol]                       0x08000ab8   Section        0  main.o(.text.main)
+    __arm_cp.0_2                             0x08000b3c   Number         4  main.o(.text.main)
+    [Anonymous Symbol]                       0x08000b40   Section        0  stm32l031lib.o(.text.pinMode)
+    [Anonymous Symbol]                       0x08000b54   Section        0  realm.o(.text.playNote)
+    __arm_cp.3_0                             0x08000b8c   Number         4  realm.o(.text.playNote)
+    __arm_cp.3_1                             0x08000b90   Number         4  realm.o(.text.playNote)
+    [Anonymous Symbol]                       0x08000b94   Section        0  realm.o(.text.prbs)
+    [Anonymous Symbol]                       0x08000bb0   Section        0  stm32l031lib.o(.text.printDecimal)
+    [Anonymous Symbol]                       0x08000be6   Section        0  realm.o(.text.random)
+    [Anonymous Symbol]                       0x08000bfc   Section        0  realm.o(.text.randomize)
+    __arm_cp.1_0                             0x08000c64   Number         4  realm.o(.text.randomize)
+    __arm_cp.1_1                             0x08000c68   Number         4  realm.o(.text.randomize)
+    __arm_cp.1_2                             0x08000c6c   Number         4  realm.o(.text.randomize)
+    __arm_cp.1_3                             0x08000c70   Number         4  realm.o(.text.randomize)
+    __arm_cp.1_4                             0x08000c74   Number         4  realm.o(.text.randomize)
+    [Anonymous Symbol]                       0x08000c78   Section        0  realm.o(.text.runGame)
+    __arm_cp.0_0                             0x08000dac   Number         4  realm.o(.text.runGame)
+    __arm_cp.0_3                             0x08000df4   Number         4  realm.o(.text.runGame)
+    __arm_cp.0_4                             0x08000df8   Number         4  realm.o(.text.runGame)
+    __arm_cp.0_5                             0x08000dfc   Number         4  realm.o(.text.runGame)
+    __arm_cp.0_6                             0x08000e00   Number         4  realm.o(.text.runGame)
+    __arm_cp.0_7                             0x08000e04   Number         4  realm.o(.text.runGame)
+    __arm_cp.0_9                             0x08000e1c   Number         4  realm.o(.text.runGame)
+    [Anonymous Symbol]                       0x08000e3c   Section        0  realm.o(.text.setHealth)
+    [Anonymous Symbol]                       0x08000e4a   Section        0  realm.o(.text.setStrength)
+    [Anonymous Symbol]                       0x08000e54   Section        0  realm.o(.text.showGameMessage)
+    [Anonymous Symbol]                       0x08000e70   Section        0  realm.o(.text.showHelp)
+    [Anonymous Symbol]                       0x08000ef4   Section        0  realm.o(.text.showPlayer)
+    [Anonymous Symbol]                       0x08000fe0   Section        0  realm.o(.text.showRealm)
+    __arm_cp.10_1                            0x08001050   Number         4  realm.o(.text.showRealm)
+    [Anonymous Symbol]                       0x080010c0   Section        0  realm.o(.text.step)
+    __arm_cp.12_0                            0x08001360   Number         4  realm.o(.text.step)
+    __arm_cp.12_1                            0x08001364   Number         4  realm.o(.text.step)
+    __arm_cp.12_3                            0x0800138c   Number         4  realm.o(.text.step)
+    __arm_cp.12_4                            0x08001390   Number         4  realm.o(.text.step)
+    __arm_cp.12_8                            0x080013ec   Number         4  realm.o(.text.step)
+    __arm_cp.12_9                            0x080013f0   Number         4  realm.o(.text.step)
+    __arm_cp.12_10                           0x080013f4   Number         4  realm.o(.text.step)
+    __arm_cp.12_11                           0x080013f8   Number         4  realm.o(.text.step)
+    __arm_cp.12_12                           0x080013fc   Number         4  realm.o(.text.step)
+    __arm_cp.12_13                           0x08001400   Number         4  realm.o(.text.step)
+    __arm_cp.12_14                           0x08001404   Number         4  realm.o(.text.step)
+    __arm_cp.12_15                           0x08001408   Number         4  realm.o(.text.step)
+    __arm_cp.12_16                           0x0800140c   Number         4  realm.o(.text.step)
+    .text_divfast                            0x08001410   Section      502  aeabi_sdivfast.o(.text_divfast)
+    Collect                                  0x08001608   Data          12  realm.o(.rodata.Collect)
+    [Anonymous Symbol]                       0x08001608   Section        0  realm.o(.rodata.Collect)
+    Dead                                     0x08001614   Data         216  realm.o(.rodata.Dead)
+    [Anonymous Symbol]                       0x08001614   Section        0  realm.o(.rodata.Dead)
+    Fail                                     0x080016ec   Data         144  realm.o(.rodata.Fail)
+    [Anonymous Symbol]                       0x080016ec   Section        0  realm.o(.rodata.Fail)
+    Fight                                    0x0800177c   Data          12  realm.o(.rodata.Fight)
+    [Anonymous Symbol]                       0x0800177c   Section        0  realm.o(.rodata.Fight)
+    MeetDragon                               0x08001788   Data         216  realm.o(.rodata.MeetDragon)
+    [Anonymous Symbol]                       0x08001788   Section        0  realm.o(.rodata.MeetDragon)
+    Monster                                  0x08001860   Data          12  realm.o(.rodata.Monster)
+    [Anonymous Symbol]                       0x08001860   Section        0  realm.o(.rodata.Monster)
+    Move                                     0x0800186c   Data          12  realm.o(.rodata.Move)
+    [Anonymous Symbol]                       0x0800186c   Section        0  realm.o(.rodata.Move)
+    MusicBegin                               0x08001878   Data         216  realm.o(.rodata.MusicBegin)
+    [Anonymous Symbol]                       0x08001878   Section        0  realm.o(.rodata.MusicBegin)
+    SpringNotes                              0x08001950   Data         216  realm.o(.rodata.SpringNotes)
+    [Anonymous Symbol]                       0x08001950   Section        0  realm.o(.rodata.SpringNotes)
+    Win                                      0x08001a28   Data         600  realm.o(.rodata.Win)
+    [Anonymous Symbol]                       0x08001a28   Section        0  realm.o(.rodata.Win)
+    WeaponDamage                             0x08001c80   Data          16  realm.o(.rodata.cst16)
+    .L.str.41                                0x08001c90   Data          31  realm.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x08001c90   Section        0  realm.o(.rodata.str1.1)
+    .L.str.19                                0x08001cac   Data           3  realm.o(.rodata.str1.1)
+    .L.str.32                                0x08001caf   Data          13  realm.o(.rodata.str1.1)
+    .L.str.10                                0x08001cbc   Data          39  realm.o(.rodata.str1.1)
+    .L.str.29                                0x08001ce3   Data          11  realm.o(.rodata.str1.1)
+    .L.str.7                                 0x08001cee   Data          25  realm.o(.rodata.str1.1)
+    .L.str.45                                0x08001d07   Data           6  realm.o(.rodata.str1.1)
+    .L.str.44                                0x08001d0d   Data           4  realm.o(.rodata.str1.1)
+    .L.str.31                                0x08001d11   Data          18  realm.o(.rodata.str1.1)
+    .L.str.12                                0x08001d23   Data          29  realm.o(.rodata.str1.1)
+    .L.str.46                                0x08001d40   Data           6  realm.o(.rodata.str1.1)
+    .L.str.35                                0x08001d46   Data          29  realm.o(.rodata.str1.1)
+    .L.str.34                                0x08001d63   Data          37  realm.o(.rodata.str1.1)
+    .L.str.8                                 0x08001d88   Data          39  realm.o(.rodata.str1.1)
+    .L.str.9                                 0x08001daf   Data          29  realm.o(.rodata.str1.1)
+    .L.str.11                                0x08001dcc   Data          39  realm.o(.rodata.str1.1)
+    .L.str.43                                0x08001df3   Data           6  realm.o(.rodata.str1.1)
+    .bss                                     0x20000000   Section       96  libspace.o(.bss)
+    GameStarted                              0x20000060   Data           1  realm.o(.bss.GameStarted)
+    [Anonymous Symbol]                       0x20000060   Section        0  realm.o(.bss.GameStarted)
+    SoundDuration                            0x20000064   Data           4  realm.o(.bss.SoundDuration)
+    [Anonymous Symbol]                       0x20000064   Section        0  realm.o(.bss.SoundDuration)
+    ms_counter                               0x20000068   Data           4  realm.o(.bss.ms_counter)
+    [Anonymous Symbol]                       0x20000068   Section        0  realm.o(.bss.ms_counter)
+    shift_register                           0x2000006c   Data           4  realm.o(.bss.shift_register)
+    [Anonymous Symbol]                       0x2000006c   Section        0  realm.o(.bss.shift_register)
+    thePlayer                                0x20000070   Data          29  realm.o(.bss.thePlayer)
+    [Anonymous Symbol]                       0x20000070   Section        0  realm.o(.bss.thePlayer)
+    theRealm                                 0x2000008d   Data         600  realm.o(.bss.theRealm)
+    [Anonymous Symbol]                       0x2000008d   Section        0  realm.o(.bss.theRealm)
+    Heap_Mem                                 0x200002e8   Data         512  startup_stm32l031xx.o(HEAP)
+    HEAP                                     0x200002e8   Section      512  startup_stm32l031xx.o(HEAP)
+    Stack_Mem                                0x200004e8   Data        1024  startup_stm32l031xx.o(STACK)
+    STACK                                    0x200004e8   Section     1024  startup_stm32l031xx.o(STACK)
+    __initial_sp                             0x200008e8   Data           0  startup_stm32l031xx.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __Vectors_Size                           0x000000c0   Number         0  startup_stm32l031xx.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32l031xx.o(RESET)
+    __Vectors_End                            0x080000c0   Data           0  startup_stm32l031xx.o(RESET)
+    __main                                   0x080000c1   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x080000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x080000c9   Thumb Code    52  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x080000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x080000d9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_zeroinit                   0x08000105   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x08000121   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_argv_1                     0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_atexit_1                   0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_clock_1                    0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_cpp_1                      0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_exceptions_1               0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_fp_1                       0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_getenv_1                   0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_heap_1                     0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_init_lc_collate_1               0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_ctype_1                 0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_monetary_1              0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_numeric_1               0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_time_1                  0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_preinit_1                  0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_rand_1                     0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_init_return                     0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    __rt_lib_init_signal_1                   0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_stdio_1                    0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_user_alloc_1               0x08000123   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_shutdown                        0x08000125   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_cpp_1                  0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000002)
+    __rt_lib_shutdown_fp_trap_1              0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000007)
+    __rt_lib_shutdown_heap_1                 0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_return                 0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000010)
+    __rt_lib_shutdown_signal_1               0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A)
+    __rt_lib_shutdown_stdio_1                0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000004)
+    __rt_lib_shutdown_user_alloc_1           0x08000127   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C)
+    __rt_entry                               0x08000129   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x08000129   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x08000129   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x0800012f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x0800012f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x08000133   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x08000133   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x0800013b   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x0800013d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x0800013d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x08000141   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    Reset_Handler                            0x08000149   Thumb Code     8  startup_stm32l031xx.o(.text)
+    NMI_Handler                              0x08000151   Thumb Code     2  startup_stm32l031xx.o(.text)
+    HardFault_Handler                        0x08000153   Thumb Code     2  startup_stm32l031xx.o(.text)
+    SVC_Handler                              0x08000155   Thumb Code     2  startup_stm32l031xx.o(.text)
+    PendSV_Handler                           0x08000157   Thumb Code     2  startup_stm32l031xx.o(.text)
+    ADC1_COMP_IRQHandler                     0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    DMA1_Channel1_IRQHandler                 0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    DMA1_Channel2_3_IRQHandler               0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    DMA1_Channel4_5_6_7_IRQHandler           0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    EXTI0_1_IRQHandler                       0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    EXTI2_3_IRQHandler                       0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    EXTI4_15_IRQHandler                      0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    FLASH_IRQHandler                         0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    I2C1_IRQHandler                          0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    LPTIM1_IRQHandler                        0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    LPUART1_IRQHandler                       0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    PVD_IRQHandler                           0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    RCC_IRQHandler                           0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    RTC_IRQHandler                           0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    SPI1_IRQHandler                          0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    TIM21_IRQHandler                         0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    TIM22_IRQHandler                         0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    TIM2_IRQHandler                          0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    USART2_IRQHandler                        0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    WWDG_IRQHandler                          0x0800015b   Thumb Code     0  startup_stm32l031xx.o(.text)
+    __user_initial_stackheap                 0x0800015d   Thumb Code     0  startup_stm32l031xx.o(.text)
+    __use_two_region_memory                  0x08000181   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x08000183   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x08000185   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x08000187   Thumb Code    62  sys_stackheap_outer.o(.text)
+    exit                                     0x080001c5   Thumb Code    16  exit.o(.text)
+    __user_libspace                          0x080001d5   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x080001d5   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x080001d5   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x080001dd   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x080001e9   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x080001e9   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x080001eb   Thumb Code     0  indicate_semi.o(.text)
+    ADCBegin                                 0x080001ed   Thumb Code    76  realm.o(.text.ADCBegin)
+    ADCRead                                  0x08000239   Thumb Code    28  realm.o(.text.ADCRead)
+    GreenOff                                 0x08000255   Thumb Code    12  realm.o(.text.GreenOff)
+    GreenOn                                  0x08000261   Thumb Code    12  realm.o(.text.GreenOn)
+    LEDAll                                   0x0800026d   Thumb Code    96  realm.o(.text.LEDAll)
+    RedOff                                   0x080002cd   Thumb Code    12  realm.o(.text.RedOff)
+    RedOn                                    0x080002d9   Thumb Code    12  realm.o(.text.RedOn)
+    SysTick_Handler                          0x080002e5   Thumb Code    28  realm.o(.text.SysTick_Handler)
+    SystemInit                               0x08000301   Thumb Code    80  system_stm32l0xx.o(.text.SystemInit)
+    YellowOff                                0x08000351   Thumb Code    12  realm.o(.text.YellowOff)
+    YellowOn                                 0x0800035d   Thumb Code    16  realm.o(.text.YellowOn)
+    addWeapon                                0x0800036d   Thumb Code   268  realm.o(.text.addWeapon)
+    delay                                    0x08000479   Thumb Code    18  stm32l031lib.o(.text.delay)
+    delayms                                  0x0800048d   Thumb Code    20  realm.o(.text.delayms)
+    doChallenge                              0x080004a1   Thumb Code   852  realm.o(.text.doChallenge)
+    egetchar                                 0x080007f5   Thumb Code    16  stm32l031lib.o(.text.egetchar)
+    enablePullUp                             0x08000805   Thumb Code    24  stm32l031lib.o(.text.enablePullUp)
+    eputchar                                 0x0800081d   Thumb Code    16  stm32l031lib.o(.text.eputchar)
+    eputs                                    0x0800082d   Thumb Code    28  stm32l031lib.o(.text.eputs)
+    getUserInput                             0x08000849   Thumb Code    12  realm.o(.text.getUserInput)
+    getWeaponName                            0x08000855   Thumb Code    40  realm.o(.text.getWeaponName)
+    initClock                                0x0800087d   Thumb Code    36  stm32l031lib.o(.text.initClock)
+    initPlayer                               0x080008a1   Thumb Code   176  realm.o(.text.initPlayer)
+    initRealm                                0x08000951   Thumb Code   124  realm.o(.text.initRealm)
+    initSerial                               0x080009cd   Thumb Code   144  stm32l031lib.o(.text.initSerial)
+    initSound                                0x08000a5d   Thumb Code    92  stm32l031lib.o(.text.initSound)
+    main                                     0x08000ab9   Thumb Code   136  main.o(.text.main)
+    pinMode                                  0x08000b41   Thumb Code    18  stm32l031lib.o(.text.pinMode)
+    playNote                                 0x08000b55   Thumb Code    64  realm.o(.text.playNote)
+    prbs                                     0x08000b95   Thumb Code    28  realm.o(.text.prbs)
+    printDecimal                             0x08000bb1   Thumb Code    54  stm32l031lib.o(.text.printDecimal)
+    random                                   0x08000be7   Thumb Code    20  realm.o(.text.random)
+    randomize                                0x08000bfd   Thumb Code   124  realm.o(.text.randomize)
+    runGame                                  0x08000c79   Thumb Code   452  realm.o(.text.runGame)
+    setHealth                                0x08000e3d   Thumb Code    14  realm.o(.text.setHealth)
+    setStrength                              0x08000e4b   Thumb Code    10  realm.o(.text.setStrength)
+    showGameMessage                          0x08000e55   Thumb Code    28  realm.o(.text.showGameMessage)
+    showHelp                                 0x08000e71   Thumb Code   132  realm.o(.text.showHelp)
+    showPlayer                               0x08000ef5   Thumb Code   236  realm.o(.text.showPlayer)
+    showRealm                                0x08000fe1   Thumb Code   224  realm.o(.text.showRealm)
+    step                                     0x080010c1   Thumb Code   848  realm.o(.text.step)
+    __aeabi_uidiv                            0x08001411   Thumb Code    68  aeabi_sdivfast.o(.text_divfast)
+    __aeabi_idiv                             0x08001455   Thumb Code   434  aeabi_sdivfast.o(.text_divfast)
+    Region$$Table$$Base                      0x08001dfc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001e0c   Number         0  anon$$obj.o(Region$$Table)
+    __libspace_start                         0x20000000   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20000060   Data           0  libspace.o(.bss)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000149
+
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00001e0c, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001e0c, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x000000c0   Data   RO          128    RESET               startup_stm32l031xx.o
+    0x080000c0   0x080000c0   0x00000008   Code   RO          163  * !!!main             c_p.l(__main.o)
+    0x080000c8   0x080000c8   0x0000003c   Code   RO          338    !!!scatter          c_p.l(__scatter.o)
+    0x08000104   0x08000104   0x0000001c   Code   RO          340    !!handler_zi        c_p.l(__scatter_zi.o)
+    0x08000120   0x08000120   0x00000002   Code   RO          201    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          215    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          217    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          220    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          222    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          224    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          227    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          229    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          231    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          233    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          235    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          237    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          239    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          241    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          243    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          245    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          247    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          251    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          253    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          255    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000000   Code   RO          257    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
+    0x08000122   0x08000122   0x00000002   Code   RO          258    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
+    0x08000124   0x08000124   0x00000002   Code   RO          293    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x08000126   0x08000126   0x00000000   Code   RO          321    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
+    0x08000126   0x08000126   0x00000000   Code   RO          323    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
+    0x08000126   0x08000126   0x00000000   Code   RO          326    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
+    0x08000126   0x08000126   0x00000000   Code   RO          329    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
+    0x08000126   0x08000126   0x00000000   Code   RO          331    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
+    0x08000126   0x08000126   0x00000000   Code   RO          334    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x08000126   0x08000126   0x00000002   Code   RO          335    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
+    0x08000128   0x08000128   0x00000000   Code   RO          165    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
+    0x08000128   0x08000128   0x00000000   Code   RO          171    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
+    0x08000128   0x08000128   0x00000006   Code   RO          183    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
+    0x0800012e   0x0800012e   0x00000000   Code   RO          173    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
+    0x0800012e   0x0800012e   0x00000004   Code   RO          174    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
+    0x08000132   0x08000132   0x00000000   Code   RO          176    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
+    0x08000132   0x08000132   0x00000008   Code   RO          177    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
+    0x0800013a   0x0800013a   0x00000002   Code   RO          206    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x0800013c   0x0800013c   0x00000000   Code   RO          264    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x0800013c   0x0800013c   0x00000004   Code   RO          265    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x08000140   0x08000140   0x00000006   Code   RO          266    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x08000146   0x08000146   0x00000002   PAD
+    0x08000148   0x08000148   0x00000038   Code   RO          129  * .text               startup_stm32l031xx.o
+    0x08000180   0x08000180   0x00000006   Code   RO          161    .text               c_p.l(heapauxi.o)
+    0x08000186   0x08000186   0x0000003e   Code   RO          187    .text               c_p.l(sys_stackheap_outer.o)
+    0x080001c4   0x080001c4   0x00000010   Code   RO          190    .text               c_p.l(exit.o)
+    0x080001d4   0x080001d4   0x00000008   Code   RO          202    .text               c_p.l(libspace.o)
+    0x080001dc   0x080001dc   0x0000000c   Code   RO          259    .text               c_p.l(sys_exit.o)
+    0x080001e8   0x080001e8   0x00000002   Code   RO          282    .text               c_p.l(use_no_semi.o)
+    0x080001ea   0x080001ea   0x00000000   Code   RO          284    .text               c_p.l(indicate_semi.o)
+    0x080001ea   0x080001ea   0x00000002   PAD
+    0x080001ec   0x080001ec   0x0000004c   Code   RO           95    .text.ADCBegin      realm.o
+    0x08000238   0x08000238   0x0000001c   Code   RO           97    .text.ADCRead       realm.o
+    0x08000254   0x08000254   0x0000000c   Code   RO           77    .text.GreenOff      realm.o
+    0x08000260   0x08000260   0x0000000c   Code   RO           71    .text.GreenOn       realm.o
+    0x0800026c   0x0800026c   0x00000060   Code   RO           45    .text.LEDAll        realm.o
+    0x080002cc   0x080002cc   0x0000000c   Code   RO           73    .text.RedOff        realm.o
+    0x080002d8   0x080002d8   0x0000000c   Code   RO           67    .text.RedOn         realm.o
+    0x080002e4   0x080002e4   0x0000001c   Code   RO           99    .text.SysTick_Handler  realm.o
+    0x08000300   0x08000300   0x00000050   Code   RO          136    .text.SystemInit    system_stm32l0xx.o
+    0x08000350   0x08000350   0x0000000c   Code   RO           75    .text.YellowOff     realm.o
+    0x0800035c   0x0800035c   0x00000010   Code   RO           69    .text.YellowOn      realm.o
+    0x0800036c   0x0800036c   0x0000010c   Code   RO           85    .text.addWeapon     realm.o
+    0x08000478   0x08000478   0x00000012   Code   RO            4    .text.delay         stm32l031lib.o
+    0x0800048a   0x0800048a   0x00000002   PAD
+    0x0800048c   0x0800048c   0x00000014   Code   RO           49    .text.delayms       realm.o
+    0x080004a0   0x080004a0   0x00000354   Code   RO           79    .text.doChallenge   realm.o
+    0x080007f4   0x080007f4   0x00000010   Code   RO           16    .text.egetchar      stm32l031lib.o
+    0x08000804   0x08000804   0x00000018   Code   RO            6    .text.enablePullUp  stm32l031lib.o
+    0x0800081c   0x0800081c   0x00000010   Code   RO           14    .text.eputchar      stm32l031lib.o
+    0x0800082c   0x0800082c   0x0000001c   Code   RO           18    .text.eputs         stm32l031lib.o
+    0x08000848   0x08000848   0x0000000c   Code   RO           63    .text.getUserInput  realm.o
+    0x08000854   0x08000854   0x00000028   Code   RO           89    .text.getWeaponName  realm.o
+    0x0800087c   0x0800087c   0x00000024   Code   RO            8    .text.initClock     stm32l031lib.o
+    0x080008a0   0x080008a0   0x000000b0   Code   RO           57    .text.initPlayer    realm.o
+    0x08000950   0x08000950   0x0000007c   Code   RO           55    .text.initRealm     realm.o
+    0x080009cc   0x080009cc   0x00000090   Code   RO           10    .text.initSerial    stm32l031lib.o
+    0x08000a5c   0x08000a5c   0x0000005c   Code   RO           22    .text.initSound     stm32l031lib.o
+    0x08000ab8   0x08000ab8   0x00000088   Code   RO           32    .text.main          main.o
+    0x08000b40   0x08000b40   0x00000012   Code   RO            2    .text.pinMode       stm32l031lib.o
+    0x08000b52   0x08000b52   0x00000002   PAD
+    0x08000b54   0x08000b54   0x00000040   Code   RO           47    .text.playNote      realm.o
+    0x08000b94   0x08000b94   0x0000001c   Code   RO           93    .text.prbs          realm.o
+    0x08000bb0   0x08000bb0   0x00000036   Code   RO           20    .text.printDecimal  stm32l031lib.o
+    0x08000be6   0x08000be6   0x00000014   Code   RO           87    .text.random        realm.o
+    0x08000bfa   0x08000bfa   0x00000002   PAD
+    0x08000bfc   0x08000bfc   0x0000007c   Code   RO           43    .text.randomize     realm.o
+    0x08000c78   0x08000c78   0x000001c4   Code   RO           41    .text.runGame       realm.o
+    0x08000e3c   0x08000e3c   0x0000000e   Code   RO           81    .text.setHealth     realm.o
+    0x08000e4a   0x08000e4a   0x0000000a   Code   RO           83    .text.setStrength   realm.o
+    0x08000e54   0x08000e54   0x0000001c   Code   RO           53    .text.showGameMessage  realm.o
+    0x08000e70   0x08000e70   0x00000084   Code   RO           51    .text.showHelp      realm.o
+    0x08000ef4   0x08000ef4   0x000000ec   Code   RO           59    .text.showPlayer    realm.o
+    0x08000fe0   0x08000fe0   0x000000e0   Code   RO           61    .text.showRealm     realm.o
+    0x080010c0   0x080010c0   0x00000350   Code   RO           65    .text.step          realm.o
+    0x08001410   0x08001410   0x000001f6   Code   RO          154    .text_divfast       c_p.l(aeabi_sdivfast.o)
+    0x08001606   0x08001606   0x00000002   PAD
+    0x08001608   0x08001608   0x0000000c   Data   RO          110    .rodata.Collect     realm.o
+    0x08001614   0x08001614   0x000000d8   Data   RO          115    .rodata.Dead        realm.o
+    0x080016ec   0x080016ec   0x00000090   Data   RO          114    .rodata.Fail        realm.o
+    0x0800177c   0x0800177c   0x0000000c   Data   RO          112    .rodata.Fight       realm.o
+    0x08001788   0x08001788   0x000000d8   Data   RO          109    .rodata.MeetDragon  realm.o
+    0x08001860   0x08001860   0x0000000c   Data   RO          108    .rodata.Monster     realm.o
+    0x0800186c   0x0800186c   0x0000000c   Data   RO          106    .rodata.Move        realm.o
+    0x08001878   0x08001878   0x000000d8   Data   RO          103    .rodata.MusicBegin  realm.o
+    0x08001950   0x08001950   0x000000d8   Data   RO          101    .rodata.SpringNotes  realm.o
+    0x08001a28   0x08001a28   0x00000258   Data   RO          111    .rodata.Win         realm.o
+    0x08001c80   0x08001c80   0x00000010   Data   RO          113    .rodata.cst16       realm.o
+    0x08001c90   0x08001c90   0x00000169   Data   RO          107    .rodata.str1.1      realm.o
+    0x08001df9   0x08001df9   0x00000003   PAD
+    0x08001dfc   0x08001dfc   0x00000010   Data   RO          337    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08001e0c, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x08001e0c, Size: 0x000008e8, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000        -       0x00000060   Zero   RW          203    .bss                c_p.l(libspace.o)
+    0x20000060        -       0x00000001   Zero   RW          102    .bss.GameStarted    realm.o
+    0x20000061   0x08001e0c   0x00000003   PAD
+    0x20000064        -       0x00000004   Zero   RW          117    .bss.SoundDuration  realm.o
+    0x20000068        -       0x00000004   Zero   RW          118    .bss.ms_counter     realm.o
+    0x2000006c        -       0x00000004   Zero   RW          116    .bss.shift_register  realm.o
+    0x20000070        -       0x0000001d   Zero   RW          105    .bss.thePlayer      realm.o
+    0x2000008d        -       0x00000258   Zero   RW          104    .bss.theRealm       realm.o
+    0x200002e5   0x08001e0c   0x00000003   PAD
+    0x200002e8        -       0x00000200   Zero   RW          127    HEAP                startup_stm32l031xx.o
+    0x200004e8        -       0x00000400   Zero   RW          126    STACK               startup_stm32l031xx.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       136          4          0          0          0       1679   main.o
+      3976       1364       2033          0        642      12293   realm.o
+        56         26        192          0       1536        716   startup_stm32l031xx.o
+       446         20          0          0          0       3828   stm32l031lib.o
+        80         16          0          0          0       2579   system_stm32l0xx.o
+
+    ----------------------------------------------------------------------
+      4700       1430       2244          0       2184      21095   Object Totals
+         0          0         16          0          0          0   (incl. Generated)
+         6          0          3          0          6          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        60          8          0          0          0          0   __scatter.o
+        28          0          0          0          0          0   __scatter_zi.o
+       502          0          0          0          0         92   aeabi_sdivfast.o
+        16          0          0          0          0         68   exit.o
+         6          0          0          0          0        136   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         60   sys_exit.o
+        62          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       748         16          0          0         96        640   Library Totals
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       742         16          0          0         96        640   c_p.l
+
+    ----------------------------------------------------------------------
+       748         16          0          0         96        640   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5448       1446       2244          0       2280      21475   Grand Totals
+      5448       1446       2244          0       2280      21475   ELF Image Totals
+      5448       1446       2244          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 7692 (   7.51kB)
+    Total RW  Size (RW Data + ZI Data)              2280 (   2.23kB)
+    Total ROM Size (Code + RO Data + RW Data)       7692 (   7.51kB)
+
+==============================================================================
+
